@@ -34,12 +34,6 @@ for(var i =0;i<operator.length;i++){
 			printHistory("");
 			printOutput("");
 		}
-		else if(this.id=="."){
-			history=history+this.id;
-					printHistory(history);
-					printOutput("");
-		}
-
 		else if(this.id=="backspace"){
 			var output=reverseNumberFormat(getOutput()).toString();
 			if(output){//if output has a value
