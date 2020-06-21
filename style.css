@@ -2,7 +2,7 @@
  	font-family: 'Orbitron', sans-serif;
  	background-image: url(background.jpg);
  }
- #calculator{
+  #calculator{
  	width: 320px;
 	height: 540px;
 	background-color: black;
@@ -11,6 +11,13 @@
 	position: relative;
 	border-radius: 40px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation: calc 1.5s both;
+ }
+ @keyframes calc{
+	 from{
+		transform: translateY(60px);
+		transform: scale(0.9);
+	 }
  }
 #result{
 	height: 120px;
