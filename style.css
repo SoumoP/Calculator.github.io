@@ -3,6 +3,17 @@
  	background-image: url(background.jpg);
 	background-repeat:none;
  }
+@media only screen and (max-width: 600px) {
+  body {
+    background-repeat:none;
+    }
+#calculator{
+	display:flex;
+	justify-content:center;
+	height:auto;
+	align-items:center;
+	}
+}
   #calculator{
  	width: 320px;
 	height: 540px;
