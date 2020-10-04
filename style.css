@@ -1,20 +1,24 @@
- body{
+body{
  	font-family: 'Orbitron', sans-serif;
- 	background-image: url(background.jpg);
-	background-repeat:none;
- }
-@media only screen and (max-width: 600px) {
-  body {
-    background-repeat:none;
-    }
-#calculator{
-	display:flex;
-	justify-content:center;
-	height:auto;
-	align-items:center;
-	}
+	 padding: 0%;
+	 margin: 0%;
+
 }
-  #calculator{
+.container{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url(background.jpg);
+	 background-repeat: no-repeat;
+	 overflow-x: hidden;
+	 padding: 0px;
+	 margin: 0px;
+}
+ #calculator{
  	width: 320px;
 	height: 540px;
 	background-color: black;
@@ -29,6 +33,10 @@
 	 from{
 		transform: translateY(60px);
 		transform: scale(0.9);
+	 }
+	 to{
+		 transform: translateY(0px);
+		 transform: scale(1);
 	 }
  }
 #result{
@@ -88,9 +96,10 @@
 	outline: 0;
 }
 .number:hover , .operator:hover{
-	background-image: url(hover.jpg);	
+	background-image: url(hover.jpg);
+	/background-color: grey;/
+	
 }
-
 button:nth-child(4){
 	font-size: 30px;
 	background-image: url(yellow.jpg);
@@ -111,3 +120,15 @@ button:nth-child(20){
 	font-size: 30px;
 	background-color: #9477af;
 }
+
+@media screen and (min-width: 480px) {
+	html {
+	  height: 100%;
+	}
+	.container{
+		overflow-x: hidden;
+		background-position: center;
+		background-size: cover;
+	}
+	
+  }
